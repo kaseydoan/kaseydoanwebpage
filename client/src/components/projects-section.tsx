@@ -15,8 +15,12 @@ const iconMap = {
 export default function ProjectsSection() {
   const { ref, isVisible } = useIntersectionObserver();
 
-  const handleViewProject = (projectTitle: string) => {
-    alert(`${projectTitle} details would be displayed here in a modal or separate page.`);
+  const handleViewProject = (projectTitle: string, projectLink?: string) => {
+    if (projectLink) {
+      window.open(projectLink, '_blank');
+    } else {
+      alert(`${projectTitle} details would be displayed here in a modal or separate page.`);
+    }
   };
 
   return (
@@ -29,7 +33,7 @@ export default function ProjectsSection() {
           variants={fadeInUp}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
-            Featured Projects
+            Projects
           </h2>
           
         </motion.div>
@@ -50,12 +54,7 @@ export default function ProjectsSection() {
                 variants={fadeInUp}
                 whileHover={{ scale: 1.02 }}
               >
-                {/* Project Image Placeholder */}
-                <div className="w-full h-48 bg-gradient-to-br from-accent-grey to-light-grey flex items-center justify-center group-hover:from-medium-grey group-hover:to-accent-grey transition-all duration-300">
-                  {IconComponent && (
-                    <IconComponent size={48} className="text-medium-grey group-hover:text-charcoal transition-colors duration-300" />
-                  )}
-                </div>
+
 
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
@@ -85,7 +84,7 @@ export default function ProjectsSection() {
                   </div>
 
                   <button 
-                    onClick={() => handleViewProject(project.title)}
+                    onClick={() => handleViewProject(project.title, (project as any).link)}
                     className="text-charcoal font-medium hover:underline flex items-center gap-1 group/btn"
                   >
                     View Project 

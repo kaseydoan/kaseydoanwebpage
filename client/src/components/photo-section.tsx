@@ -26,9 +26,7 @@ export default function PhotoSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-charcoal rounded-full"></div>
-              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-medium-grey rounded-full"></div>
+
             </div>
           </div>
 

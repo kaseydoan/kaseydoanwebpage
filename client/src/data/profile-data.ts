@@ -96,29 +96,32 @@ export const profileData = {
 
   projects: [
     {
-      id: 3,
+      id: 1,
       title: "NYC Taxi Explorer",
       category: "Big Data Analytics",
       description: "Full-stack data visualization application processing 2024 NYC taxi data using Apache Spark. Features interactive maps, demand heatmaps, fare anomaly detection, and trip analytics with Google Cloud MySQL backend.",
       technologies: ["Apache Spark", "PySpark", "FastAPI", "React", "TypeScript", "MySQL", "Docker"],
-      icon: "graduation-cap"
+      icon: "graduation-cap",
+      link: "https://github.com/kaseydoan/nyctaxiapp"
     },
-    {
-      id: 5,
-      title: "Medical Diagnostic Platform",
-      category: "Award Winner",
-      description: "Best Innovation Award winner at CutieHack 2022. Web application streamlining medication diagnosis built in 24 hours with React and GitHub workflows.",
-      technologies: ["React", "GitHub", "Hackathon", "Medical"],
-      icon: "medal"
-    },
-    {
-      id: 6,
-      title: "Digital Inclusion Program",
-      category: "Community Impact",
-      description: "Provided technical support to 500+ residents including those with disabilities and non-English speakers during COVID-19 pandemic. City of San José initiative.",
-      technologies: ["Community", "Accessibility", "Support", "Impact"],
-      icon: "hands-helping"
-    }
+          {
+        id: 2,
+        title: "Medical Diagnostic Platform",
+        category: "Award Winner",
+        description: "Best Innovation Award winner at CutieHack 2022. Web application streamlining medication diagnosis built in 24 hours with React and GitHub workflows.",
+        technologies: ["React", "GitHub", "Hackathon", "Medical"],
+        icon: "medal",
+        link: "https://github.com/kaseydoan/MedMe"
+      },
+          {
+        id: 3,
+        title: "Digital Inclusion Program",
+        category: "Community Impact",
+        description: "Provided technical support to 500+ residents including those with disabilities and non-English speakers during COVID-19 pandemic. City of San José initiative.",
+        technologies: ["Community", "Accessibility", "Support", "Impact"],
+        icon: "hands-helping",
+        link: "https://www.sanjoseca.gov/Home/Components/News/News/3128/4699#:~:text=%E2%80%9CBy%20providing%20free%20technical%20support,(408)%20753%2D0822."
+      }
   ],
 
   leadership: [
@@ -170,8 +173,6 @@ export const profileData = {
   ],
 
   stats: [
-    { label: "Years Experience", value: "4+" },
-    { label: "People Helped", value: "500+" },
-    { label: "Technologies", value: "15+" }
+    {}
   ]
 };
