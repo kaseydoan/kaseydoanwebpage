@@ -161,9 +161,9 @@ export const profileData = {
       organization: "America Taekwondo Center",
       location: "Morgan Hill, CA", 
       period: "June 2018 - December 2021",
-      description: "Taught and mentored classes of 20-30 students, ranging from beginners to advanced black belts. Served as lead instructor with 15+ years of experience.",
+      description: "Taught and mentored classes of 40+ students, ranging from beginners to advanced black belts. Served as lead instructor with 15+ years of experience.",
       achievements: [
-        "Mentored 20-30 students per class across all skill levels",
+        "Mentored 40+ students per class across all skill levels",
         "15+ years of competitive and instructional experience",
         "Oversaw student progression and testing protocols",
         "Organized curriculum for diverse age groups"
